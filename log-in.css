@@ -1,0 +1,279 @@
+
+    *{
+      margin:0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Ubuntu', serif;
+      background-color: rgb(249, 250, 251);
+      height: 100vh;
+      width: 100%;
+    }
+    /* nav-bar css */
+    nav{
+      display: flex;
+      box-shadow: 0px 0px 20px 5px #57A6A1;
+      padding: 1.5%;
+      background-color: whitesmoke;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+      position: sticky;
+      top: 0px;
+      font-size: 1.5rem;
+  }
+  .menu{
+    display: none;
+    border: none;
+  }
+  .brandImage{
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;  
+  }
+  .pages{
+      flex-grow: 1;
+  
+  }
+  .pagesUl{
+      display: flex;
+      list-style: none;
+  }
+  .pagesUl li{
+      margin: 2%;   
+  }
+  .pagesUl li a{
+      padding: 5px;
+      border-right: 2px solid transparent;
+      transition-duration: .2s;
+      color: #240750;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 10px;
+  
+  }
+  .pagesUl li a:hover{
+  
+      color: #240750;
+      box-shadow:5px 5px 5px 2px #344C64;
+  }
+  
+
+  .btn{
+      box-shadow:0px 5px 5px 2px #344C64;
+      background-color: whitesmoke;
+      display: inline-block;
+      color: #240750;
+      padding: 8px;
+      margin: 2px;
+      border-radius: 10px;
+      transition-duration: .5s;
+      font-weight: 500;
+  }
+  .btn:hover{
+  
+      color: white;
+      background-color: #240750;
+  }
+/* Navbar ends */
+ 
+  
+
+    
+    .Sign-in-form{
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+
+      
+    
+    }
+    .g-icon{
+      align-self: center;
+    }
+    .div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        margin: 4% auto;
+
+    }
+    .div h2, p {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333333;
+    }
+    label {
+      display: block;
+      margin-bottom: 9px;
+      color: #555555;
+    }
+    .div input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 16px;
+      align-items: center;
+    }
+    .div button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+   
+    .div a {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      color: #007BFF;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Footer Starts */
+    footer {
+      color: #240750;
+      background-color: whitesmoke;
+      text-align: center;
+      padding: 2%;
+      box-shadow: -2px 0px 10px 10px #344C64;
+  
+  }
+  
+  footer h1{
+      font-size: 2.5rem;
+      margin-bottom: 2%;
+  }
+  
+  
+  
+  hr {
+      width: 80%;
+      margin: auto;
+  }
+  
+  .contact {
+      display: flex;
+      flex-direction: column;
+      margin: 2% 0px;
+  }
+  
+  .contact a img {
+      width: 50px;
+      height: 50px;
+  }
+  
+  .contact div {
+      display: flex;
+      justify-content: space-evenly;
+  }
+  
+  .copyright p {
+      margin-top: 2%;
+  }
+    @media (max-width: 786px){
+      nav{
+        font-size: 1rem;
+      }
+      footer h2{
+        font-size: 1.5rem;
+    }
+    footer h1{
+        font-size: 2rem;
+    }
+    .footerImage{
+        height: 200px;
+        width: 200px;
+    }
+    .contact a img {
+        width: 50px;
+        height: 50px;
+    }
+    }
+    @media (max-width: 573px){
+      nav{
+        font-size: .8rem;
+      }
+      .footerImage{
+          height: 150px;
+          width: 160px;
+      }
+      footer h2{
+        font-size: 1rem;
+    }
+    footer h1{
+      font-size: 1.5rem;
+  }
+  .pagesLinks ul a{
+    font-size: .5rem;
+}
+    }
+@media (max-width: 426px){
+  .sign_btn{
+      display: none;
+  }
+  .pages{
+    display: none;
+}
+.div button{
+  padding: 4px;
+}
+.brand{
+  margin: 0px auto;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#menu{
+  height: 100vh;
+  width: 10vh;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 20px 5px #57A6A1;
+}
+#menu img{
+  height: 20px;
+  width: 20px;
+}
+.menu{
+  display: flex;
+  
+  
+}
+
+.menuPages ul{
+  display: block;
+}
+.menuPages ul li{
+  line-height: 4;
+}
+.menu img{
+  width: 20px;
+  height: 20px;
+}
+  }
+  @media (max-width: 485px){
+    nav{
+        font-size: .6rem ;
+    }
+    .brandImage{
+        width: 30px;
+        height: 30px;
+    }
+}
+    

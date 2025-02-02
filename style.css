@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    
+}
+body{
+    font-family: "Ubuntu", serif;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+nav {
+    display: flex;
+    box-shadow: 0px 0px 20px 5px #57A6A1;
+    
+    background-color: whitesmoke;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    font-size: 1.5rem;
+}
+.menu{
+    display: none;
+    border: none;
+    
+}
+
+
+.brandImage {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.pages {
+    flex-grow: 1;
+
+}
+
+.pagesUl {
+    display: flex;
+    list-style: none;
+}
+
+.pagesUl li {
+    margin: 2%;
+}
+
+.pagesUl li a {
+    padding: 5px;
+
+    transition-duration: .2s;
+    color: #240750;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+.pagesUl li a:hover {
+
+    color: #240750;
+    box-shadow: 5px 5px 5px 2px #344C64;
+}
+
+div.navBtn {
+    margin-left: auto;
+    
+}
+
+.btn {
+    box-shadow: 0px 5px 5px 2px #344C64;
+    background-color: whitesmoke;
+    display: inline-block;
+    color: #240750;
+    padding: 8px;
+    margin: 2px;
+    border-radius: 10px;
+    transition-duration: .5s;
+    font-weight: 500;
+}
+
+.btn:hover {
+
+    color: white;
+    background-color: #240750;
+}
+
+#searchBar {
+
+
+
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 2px;
+    background-color: whitesmoke;
+    width: 100%;
+    color: #344C64;
+}
+
+nav form {
+    margin-right: 5px;
+    width: 200px;
+}
+
+#searchBar:focus {
+    box-shadow: 0px 0px 10px #344C64;
+    border-style: none;
+}
+.searchImage{
+    display: none;
+}
+
+
+.main{
+    
+    box-shadow: 0px 0px 15px#344C64;
+    width: 40vw;
+    height: 100vh;
+    margin: 2% auto;
+    
+    font-size: 30px;
+    padding: 2%;
+    line-height: 50px;
+    border-radius: 15px;
+    
+    
+    
+}
+.heading{
+    text-align: center;
+}
+
+main input{
+    box-shadow: 0px 0px 5px#344C64;
+    padding: .8%;
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+label{
+    font-size: 1.5rem;
+}
+
+main button{
+    padding: 7px;
+    width: 100%;
+    font-size: 25px;
+    margin-top: 10%;
+    background-color: rgb(194, 191, 191);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: .5s;
+
+}
+main button:hover{
+   
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+
+
+.para{
+    font-size: 18px;
+    text-align: center;
+}
+footer {
+    color: #240750;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 2%;
+    box-shadow: -2px 0px 10px 10px #344C64;
+
+}
+
+footer h1{
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+}
+
+
+
+hr {
+    width: 80%;
+    margin: auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0px;
+}
+
+.contact a img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copyright p {
+    margin-top: 2%;
+}
+
+
+@media (max-width:430px) {
+ 
+
+
+   
+    .main{
+        font-size: 15px;
+        line-height: 30px;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 10px;
+        
+        padding: 10px;
+        height: 50%;
+        
+    }
+    main button{
+        font-size: 15px;
+    }
+    .para{
+        font-size: .5rem;
+    }
+
+    main input{
+        width: 100%;
+        height: 25px;
+        font-size: .5rem;
+
+        border: 1px solid black;
+    }
+    label{
+        font-size: 1rem;
+    }
+} 
+@media (max-width: 786px){
+    .main{
+        font-size: 15px;
+        line-height: 30px;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 10px;
+        
+        padding: 10px;
+        height: 50%;
+        
+    }
+    main button{
+        font-size: 15px;
+    }
+    .para{
+        font-size: .5rem;
+    }
+    .main h1{
+        font-size: 1.5rem;
+    }
+    main input{
+        width: 100%;
+        height: 25px;
+        font-size: .5rem;
+
+        border: 1px solid black;
+    }
+    label{
+        font-size: 1rem;
+    }nav{
+      font-size: 1rem;
+    }
+    footer h2{
+      font-size: 1.5rem;
+  }
+  footer h1{
+      font-size: 2rem;
+  }
+  .footerImage{
+      height: 200px;
+      width: 200px;
+  }
+  .contact a img {
+      width: 50px;
+      height: 50px;
+  }
+  }
+  @media (max-width: 573px){
+    nav{
+      font-size: .8rem;
+    }
+    .footerImage{
+        height: 150px;
+        width: 160px;
+    }
+    footer h2{
+      font-size: 1rem;
+  }
+  footer h1{
+    font-size: 1.5rem;
+}
+.pagesLinks ul a{
+  font-size: .5rem;
+}
+  }
+@media (max-width: 426px){
+.sign_btn{
+    display: none;
+}
+.pages{
+  display: none;
+}
+.div button{
+padding: 4px;
+}
+.brand{
+margin: 0px auto;
+flex-grow: 1;
+display: flex;
+justify-content: center;
+}
+
+#menu{
+height: 100vh;
+width: 10vh;
+background-color: whitesmoke;
+box-shadow: 0px 0px 20px 5px #57A6A1;
+}
+#menu img{
+height: 20px;
+width: 20px;
+}
+.menu{
+display: flex;
+
+
+}
+
+.menuPages ul{
+display: block;
+}
+.menuPages ul li{
+line-height: 4;
+}
+.menu img{
+width: 20px;
+height: 20px;
+}
+}
+@media (max-width: 485px){
+  nav{
+      font-size: .6rem ;
+  }
+  .brandImage{
+      width: 30px;
+      height: 30px;
+  }
+}
+  

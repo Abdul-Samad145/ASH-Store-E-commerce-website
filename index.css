@@ -1,0 +1,337 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    font-family: "Ubuntu", serif;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+    
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+/* Navbar section */
+
+nav {
+    display: flex;
+    box-shadow: 0px 0px 20px 5px #57A6A1;
+    padding: 1.5%;
+    background-color: whitesmoke;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    font-size: 1.5rem;
+}
+.menu{
+    display: none;
+}
+
+
+
+.brandImage {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.pages {
+    flex-grow: 1;
+
+}
+
+.pagesUl {
+    display: flex;
+    list-style: none;
+}
+
+.pagesUl li {
+    margin: 2%;
+}
+
+.pagesUl li a {
+    padding: 5px;
+
+    transition-duration: .2s;
+    color: #240750;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+.pagesUl li a:hover {
+
+    color: #240750;
+    box-shadow: 5px 5px 5px 2px #344C64;
+}
+
+div.navBtn {
+    margin-left: auto;
+    
+}
+
+.btn {
+    box-shadow: 0px 5px 5px 2px #344C64;
+    background-color: whitesmoke;
+    display: inline-block;
+    color: #240750;
+    padding: 8px;
+    margin: 2px;
+    border-radius: 10px;
+    transition-duration: .5s;
+    font-weight: 500;
+}
+
+.btn:hover {
+
+    color: white;
+    background-color: #240750;
+}
+
+#searchBar {
+
+
+
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 2px;
+    background-color: whitesmoke;
+    width: 100%;
+    color: #344C64;
+}
+
+form {
+    margin-right: 5px;
+    width: 200px;
+}
+
+#searchBar:focus {
+    box-shadow: 0px 0px 10px #344C64;
+    border-style: none;
+}
+.searchImage{
+    display: none;
+}
+
+
+/* Main Image */
+.mainImage {
+    height: 50vh;
+    width: 80%;
+    box-shadow: 0px 0px 30px #344C64;
+    margin-top: 2%;
+    margin: 2% auto;
+    background-image: url(images/mainimage.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    animation: bcgimage 20s ease-out infinite;
+
+}
+
+@keyframes bcgimage {
+    25% {
+        background-image: url(images/ASH\ Store.png);
+    }
+
+    50% {
+        background-image: url(images/ASH\ Store\ \(1\).png);
+    }
+
+    75% {
+        background-image: url(images/ASH\ Store\ \(2\).png);
+    }
+}
+
+/* First section */
+.firstSection {
+    margin-top: 5%;
+    text-align: center;
+}
+.upbtn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(36, 7, 80, .5);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    
+}
+.upbtn img{
+    margin: auto 0px;
+}
+
+div.products {
+    display: flex;
+    width: 100%;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+div.products a {
+    text-decoration: none;
+}
+
+.cards {
+    height: 350px;
+    width: 300px;
+    text-align: center;
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 8px 3px #344C64;
+    transition: all .5s;
+    font-size: 2rem;
+
+
+
+
+}
+
+.cards:hover {
+    background-color: #57A6A1;
+    color: whitesmoke;
+}
+
+.cards img {
+    height: 250px;
+    width: 250px;
+    margin: 4px auto;
+    transition: all .5s;
+
+
+}
+
+.cards:hover img {
+    transform: scale(1.06);
+}
+
+.buy {
+    width: 60%;
+    display: inline-block;
+    padding: 2px;
+
+
+
+}
+
+.buy:hover {
+    background-color: #240750;
+    color: whitesmoke;
+}
+
+.addCart {
+    display: inline-block;
+    padding: 2px;
+    width: 30%;
+
+}
+
+.addCart:hover {
+    background-color: #240750;
+    color: whitesmoke;
+
+}
+
+/* Second section */
+.secondSection {
+    width: 95%;
+    box-shadow: 0px 0px 8px 3px #344C64;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.longCard {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+
+.longCard img {
+    height: 250px;
+    width: 250px;
+    transition: all .6s;
+
+
+
+}
+
+.longCard img:hover {
+    transform: scale(1.08);
+}
+
+/* Third Section */
+.thirdSection {
+    margin-top: 5%;
+    text-align: center;
+}
+
+/* Footer Section */
+footer {
+    color: #240750;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 2%;
+    box-shadow: -2px 0px 10px 10px #344C64;
+
+}
+
+footer h1{
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+}
+
+
+
+hr {
+    width: 80%;
+    margin: auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0px;
+}
+
+.contact a img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copyright p {
+    margin-top: 2%;
+}
